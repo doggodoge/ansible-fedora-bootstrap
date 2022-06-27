@@ -19,6 +19,7 @@
       - fish
       - gh
       - tokei
+      - fzf
     state: present
   tags: [devtools]
 

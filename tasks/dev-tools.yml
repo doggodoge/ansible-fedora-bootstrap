@@ -23,6 +23,16 @@
     state: present
   tags: [devtools]
 
+- name: Install Development Libraries (dnf)
+  become: yes
+  dnf:
+    name:
+      - libxcb
+      - openssl-devel
+      - libX11-devel
+    state: present
+    tags: [libs]
+
 - name: Check if deno is installed
   stat:
     path: '{{ ansible_env.HOME }}/.deno'

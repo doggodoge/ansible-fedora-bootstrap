@@ -23,3 +23,9 @@
     - import_tasks: tasks/fish.yml
     - import_tasks: tasks/gsettings.yml
     - import_tasks: tasks/fonts.yml
+    - name: Print instructions to correct issue with ibus
+      debug:
+        msg: |
+          Run the command 'ibus-setup' then Emoji -> Emoji annotation
+          then delete the control + . option. This interferes with vscode
+          quick actions.

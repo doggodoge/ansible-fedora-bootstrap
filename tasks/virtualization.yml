@@ -8,4 +8,6 @@
       - '@Virtualization'
       - vagrant
       - vagrant-libvirt
+      - qemu-user
+      - qemu-user-static
     state: present

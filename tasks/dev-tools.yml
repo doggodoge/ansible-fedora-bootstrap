@@ -32,7 +32,7 @@
       - openssl-devel
       - libX11-devel
     state: present
-    tags: [libs]
+  tags: [libs]
 
 - name: Check if deno is installed
   stat:

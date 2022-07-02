@@ -19,6 +19,7 @@
     - import_tasks: tasks/sublime-text.yml
     - import_tasks: tasks/1password.yml
     - import_tasks: tasks/games.yml
+    - import_tasks: tasks/entertainment.yml
     - import_tasks: tasks/neovim.yml
     - import_tasks: tasks/fish.yml
     - import_tasks: tasks/gsettings.yml

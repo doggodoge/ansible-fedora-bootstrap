@@ -1,0 +1,7 @@
+- name: Install Entertainment Software (dnf)
+  dnf:
+    name:
+      - cmus
+      - mpv
+    state: present
+  tags: [entertainment]

@@ -21,6 +21,7 @@
       - gh
       - tokei
       - fzf
+      - pandoc
     state: present
   tags: [devtools]
 

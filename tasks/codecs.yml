@@ -25,17 +25,3 @@
     name: lame
     state: present
 
-- name: Install ffmpeg
-  become: yes
-  dnf:
-    name:
-      - ffmpeg
-      - ffmpeg-devel
-      - ffmpeg-libs
-    state: present
-
-- name: Install multimedia group
-  become: yes
-  dnf:
-    name: '@Multimedia'
-    state: present

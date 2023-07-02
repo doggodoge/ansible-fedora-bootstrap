@@ -3,7 +3,7 @@
 
 - hosts: localhost
   vars:
-    fedora_release_version: 36
+    fedora_release_version: 38
   tasks:
     - import_tasks: tasks/rpm-fusion.yml
     - import_tasks: tasks/essential.yml

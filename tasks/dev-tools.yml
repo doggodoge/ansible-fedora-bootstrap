@@ -58,15 +58,9 @@
     path: '{{ ansible_env.HOME }}/.bashrc'
     insertbefore: '#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!'
 
-- name: Install wasmer wasm-wasi runtime
-  command: 
-    cmd: curl https://get.wasmer.io -sSfL | sh
-    creates: '{{ ansible_env.HOME }}/.wasmer/bin/wasmer'
-  tags: [devtools]
-
 - name: Install Java and Gradle (sdkman)
   include_role:
-    name: comcast.sdkman
+    name: Comcast.sdkman
   vars:
     sdkman_user: '{{ ansible_user_id }}'
     sdkman_group: '{{ ansible_user_id }}'

@@ -1,4 +1,5 @@
 - name: Install Entertainment Software (dnf)
+  become: yes
   dnf:
     name:
       - cmus

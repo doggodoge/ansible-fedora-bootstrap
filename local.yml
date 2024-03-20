@@ -3,7 +3,7 @@
 
 - hosts: localhost
   vars:
-    fedora_release_version: 38
+    fedora_release_version: 39
   tasks:
     - import_tasks: tasks/rpm-fusion.yml
     - import_tasks: tasks/essential.yml
@@ -14,7 +14,7 @@
     - import_tasks: tasks/rustup.yml
     - import_tasks: tasks/productivity.yml
     - import_tasks: tasks/virtualization.yml
-    - import_tasks: tasks/codecs.yml
+    # - import_tasks: tasks/codecs.yml
     - import_tasks: tasks/vscode.yml
     - import_tasks: tasks/sublime-text.yml
     - import_tasks: tasks/1password.yml
@@ -22,7 +22,7 @@
     - import_tasks: tasks/entertainment.yml
     - import_tasks: tasks/neovim.yml
     - import_tasks: tasks/fish.yml
-    - import_tasks: tasks/gsettings.yml
+    # - import_tasks: tasks/gsettings.yml
     - import_tasks: tasks/fonts.yml
     - name: Print instructions to correct issue with ibus
       debug:

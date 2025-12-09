@@ -1,3 +1,6 @@
+> [!WARNING]
+> Archived on GitHub and migrated to https://git.sr.ht/~gary_moore/ansible-fedora-bootstrap
+
 # Ansible Fedora Bootstrap
 
 This playbook is so I can spin up my desired development environment on a new
